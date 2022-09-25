@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title>Meteor Attack!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="app" class="app">
+    <div id="instructions" class="instructions">
+      <div class="ins-row">
+        <div class="ins-group"><img src="./images/arrow.png" alt=""
+            style="width: 35px; transform: rotate(180deg)"><span>MOVE<br>LEFT</span></div>
+        <div class="ins-group"><img src="./images/arrow.png" alt="" style="width: 35px;"><span>MOVE<br>RIGHT</span>
+        </div>
+        <div class="ins-group"><img src="./images/arrow.png" alt=""
+            style="width: 35px; transform: rotate(-90deg)"><span>MOVE<br>UP</span></div>
+      </div>
+      <div class="ins-row">
+        <div class="ins-group"><img src="./images/arrow.png" alt=""
+            style="width: 35px; transform: rotate(90deg)"><span>MOVE<br>DOWN</span></div>
+        <div class="ins-group"><img src="./images/space.png" alt="" style="width: 35px;"><span>INSERT<br>COIN</span>
+        </div>
+        <div class="ins-group"><img src="./images/s-key.png" alt="" style="width: 35px;"><span>START<br>GAME</span>
+        </div>
+      </div>
+    </div>
+    <div class="status-bar" id="status-bar">
+      <span class="score" id="score"></span>
+      <div class="lives" id="lives">
+        <img src="./images/live.png" alt="" class="live-icon"><img src="./images/live.png" alt="" class="live-icon"><img
+          src="./images/live.png" alt="" class="live-icon">
+      </div>
+    </div>
+    <div class="game-over" id="game-over">GAME OVER</div>
+    <div class="game-over-start-again" id="game-over-start-again">press space to restart</div>
+    <img src="./images/logo.png" alt="" class="welcome" id="welcome">
+    <div class="start-btn" id="start-btn">START</div>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/Enemy.js"></script>
+  <script src="js/engine-utilities.js"></script>
+  <script src="js/Engine.js"></script>
+  <script src="js/Player.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

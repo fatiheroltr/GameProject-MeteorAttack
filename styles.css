@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+body {
+  margin: 0;
+  font-family: "Press Start 2P", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/back.jpg);
+  background-size: cover;
+  color: white;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  align-items: center;
+  position: relative;
+  height: 600px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 2em #00d0ff, 0 0 1em;
+}
+
+.player {
+  position: absolute;
+  z-index: 10;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+}
+
+.score {
+  z-index: 101;
+}
+
+.lives {
+  z-index: 101;
+  display: none;
+}
+.status-bar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+  width: 425px;
+  top: 100px;
+}
+
+.game-over {
+  position: absolute;
+  font-size: 3em;
+  top: 45%;
+  z-index: 101;
+  display: none;
+}
+
+.game-over-start-again {
+  position: absolute;
+  font-size: 1.2em;
+  top: 55%;
+  z-index: 101;
+  display: none;
+}
+
+.welcome {
+  position: absolute;
+  font-size: 2em;
+  top: 40px;
+  text-align: center;
+  z-index: 101;
+  display: block;
+  transition: 0.2s ease-in-out;
+}
+
+.start-btn {
+  position: absolute;
+  font-size: 1.3em;
+  top: 320px;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 25px 20px 20px 25px;
+  transition: 0.2s ease-in-out;
+  z-index: 102;
+  display: block;
+}
+
+.start-btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.start-btn:active {
+  transform: scale(0.7);
+}
+
+.instructions {
+  position: absolute;
+  top: 435px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.6em;
+}
+
+.ins-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.ins-group {
+  /* border: 1px red solid; */
+  /* padding: 15px; */
+  width: 120px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.ins-row span {
+  padding-left: 14px;
+}
+
+.status-bar {
+  width: 460px;
+  z-index: 101;
+  height: 20px;
+  top: 500px;
+}
+
+.live-icon {
+  width: 25px;
+  margin-left: 10px;
+}
