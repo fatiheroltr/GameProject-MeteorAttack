@@ -2,8 +2,6 @@
 
 <p align="center"><img src="./images/logo.png"></p>
 
-## Welcome to Meteor Attack! v1.0. Are you the good pilot who can save us from meteors? If you think so, let's give it a try and see what you can do! More dodged meteors, more scores! Dont forget, you have only three shots!
-
 ## **Live demo : https://meteor-attack.netlify.app**
 
 ## **Details**
